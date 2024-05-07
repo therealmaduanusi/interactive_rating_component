@@ -1,0 +1,83 @@
+/* universal style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    background-color: #00001A;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form, section{
+    max-width: 23rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #1a1a2bba;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+section {
+    text-align: center;
+}
+section img{
+    max-width: 50%;
+    margin: auto;
+}
+section p:nth-child(2){
+    padding: 0.7rem 1rem;
+    max-width: 70%;
+    margin: auto;
+    border-radius: 1rem;
+    background-color: #1a1a2bcf;
+    color: #ffa500;
+}
+
+form .num-warapper {
+    display: grid;
+    column-gap: 10px;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+}
+.num-warapper .numbers{
+    border-radius: 50%;
+    padding: 1rem 0.5rem;
+    background-color: #1a1a2b;
+}
+.num-warapper .numbers:hover{
+    background-color: #ffa500;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+form button {
+    background-color: #ffa500;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form button:hover{
+    background-color: #fff;
+    color: #ffa500;
+    cursor: pointer;
+}
+
+@media (max-width: 370px) {
+    form{
+        max-width: 20rem;
+    }
+    .num-warapper .numbers{
+        padding: 0.8rem 0.5rem;
+    }
+}
