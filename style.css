@@ -74,7 +74,8 @@ form button:hover{
 }
 
 @media (max-width: 370px) {
-    form{
+    form,
+    section{
         max-width: 20rem;
     }
     .num-warapper .numbers{
