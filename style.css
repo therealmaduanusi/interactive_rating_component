@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 /* universal style */
 * {
     margin: 0;
@@ -6,6 +7,7 @@
 }
 
 body{
+    font-family: "Overpass", sans-serif;
     color: #fff;
     background-color: #00001A;
     height: 100vh;
@@ -16,7 +18,8 @@ body{
 }
 
 form, section{
-    max-width: 23rem;
+    max-width: 26rem;
+    margin: 0 1rem;
     padding: 1.5rem;
     border-radius: 10px;
     background-color: #1a1a2bba;
@@ -48,7 +51,7 @@ form .num-warapper {
 }
 .num-warapper .numbers{
     border-radius: 50%;
-    padding: 1rem 0.5rem;
+    padding: 1.4rem 0;
     background-color: #1a1a2b;
     text-decoration: none;
     color: #fff;
@@ -76,10 +79,6 @@ form button:hover{
 }
 
 @media (max-width: 370px) {
-    form,
-    section{
-        max-width: 20rem;
-    }
     section p:nth-child(2){
         max-width: 80%;
     }
